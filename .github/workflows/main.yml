@@ -1,0 +1,15 @@
+9.	 name: mercuryhealth-web-ci 
+10.	 on: [push] 
+11.	 jobs: 
+12.	 build: 
+13.	   runs-on: ubuntu-latest 
+14.	 steps: 
+15.	   - uses: actions/checkout@v1 
+16.	   - name: Setup .NET Core SDK 
+17.	
+18.	 uses: actions/setup-dotnet@v1.7.2 
+19.	 with: 
+20.	   dotnet-version: 3.1.101 
+21.	     - run: dotnet build -c Release 
+22.	     - run: dotnet test -c Release 
+23.	     - run: dotnet publish -c Release -o mercuryhealth-web 
