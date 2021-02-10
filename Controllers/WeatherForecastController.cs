@@ -14,7 +14,7 @@ namespace AspNetCoreVueStarter.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Beast from the East,"Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Beast from the East","Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
