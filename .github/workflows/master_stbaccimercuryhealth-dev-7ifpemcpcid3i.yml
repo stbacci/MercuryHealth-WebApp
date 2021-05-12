@@ -28,7 +28,7 @@ jobs:
       run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
     - name: Deploy to Azure Web App
-      uses: azure/webapps-deploy@v2
+      uses: azure/webapps-deploy@v2.1.6
       with:
         app-name: 'stbaccimercuryhealth-dev-7ifpemcpcid3i'
         slot-name: 'production'
